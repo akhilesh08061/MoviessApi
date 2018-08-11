@@ -35,6 +35,17 @@ namespace moviesApi
             services.AddHttpsRedirection(Options => { Options.RedirectStatusCode = StatusCodes.Status307TemporaryRedirect;
                 Options.HttpsPort = 5001;
             });
+
+
+            //add identity server authentication and authorization
+
+            services.AddAuthentication("Bearer")
+                .AddIdentityServerAuthentication(Options =>
+                {
+                    Options.Authority = "http://localhost:5004";
+                    Options.RequireHttpsMetadata = false;
+                    Options.ApiName = "moviesApi";
+                });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -45,6 +56,7 @@ namespace moviesApi
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseAuthentication();
             app.UseHttpsRedirection();
             app.UseMvc();
         }

@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "moviesApi", "moviesApi\moviesApi.csproj", "{34F37924-1711-4FAD-8D56-7C7C904299D2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "moviesApi", "moviesApi\moviesApi.csproj", "{34F37924-1711-4FAD-8D56-7C7C904299D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdServer", "IdServer\IdServer.csproj", "{F28341CC-B0CD-45F4-9D16-C3D17A6735D9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{34F37924-1711-4FAD-8D56-7C7C904299D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34F37924-1711-4FAD-8D56-7C7C904299D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34F37924-1711-4FAD-8D56-7C7C904299D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F28341CC-B0CD-45F4-9D16-C3D17A6735D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F28341CC-B0CD-45F4-9D16-C3D17A6735D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F28341CC-B0CD-45F4-9D16-C3D17A6735D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F28341CC-B0CD-45F4-9D16-C3D17A6735D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
