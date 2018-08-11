@@ -1,2 +1,2 @@
 # MoviessApi
-api collection for Moviess app
+api collection for Moviess android application
